@@ -9,8 +9,10 @@
 }
 
 body {
-    background: linear-gradient(295deg, #4e11b8, #020024);
-    
+    background: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +20,8 @@ body {
 }
 
 .container {
-    background: #fdfdfdfd;
+    background: #e4e4e4b6;
+    backdrop-filter: blur(30px);
     width: 350px;
     border-radius: 18px;
 
@@ -31,7 +34,9 @@ body {
 
 .container h1 {
     margin-top: 12px;
-    font-size: 2.5em;
+    font-size: 2.4em;
+
+    color: #BF0413;
 }
 
 .container .box  {
@@ -39,9 +44,14 @@ body {
     gap: 8px;
 } 
 
+#box {
+    display: flex;
+    gap: 8px;
+}
+
 .container input {
     width: 200px;
-    height: 30px;
+    height: 35px;
     border-radius: 8px;
     padding: 12px;
     outline: none;
@@ -49,20 +59,34 @@ body {
     border: .5px solid;
 }
 
+.container .search {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-bottom: 12px;
+}
+
 .container button {
     border: none;
+    background: transparent;
 }
 
 .container .box{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 18px;
+}
+
+.hide {
+    display: none;
 }
 
 .container i {
     border-radius: 8px;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     
     display: flex;
     align-items: center;
@@ -71,5 +95,5 @@ body {
     cursor: pointer;
 
     color: #fff;
-    background: #6316EB;
+    background: #BF0413;
 }

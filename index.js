@@ -26,3 +26,5 @@ function limparcampos() {
     document.getElementById('cidade').value = ""
     document.getElementById('estado').value = ""
 }
+
+$(cep).mask("00000-000");
