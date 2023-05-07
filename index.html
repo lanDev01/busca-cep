@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Busca Cep</title>
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="https://kit.fontawesome.com/dbb93704e0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <form action="">
+    <div class="container">
+        <h1>Digite seu Cep</h1>
+        <div class="box">
+            <div class="inputBox">
+             <input type="text" onblur="pesquisacep(this.value)" name="cep" id="cep" placeholder="Digite seu CEP">
+             <button type="submit" onclick="pesquisacep(this.value)">
+               <i class="fa-solid fa-magnifying-glass"></i>
+             </button>
+            </div>
+          <div class="search">
+        
+            <div class="inputBox">
+                <input type="text" name="rua" id="rua" class="inputUser" placeholder="Sua Rua">
+            </div>
+            <div class="inputBox">
+                <input type="text" name="bairro" id="bairro" class="inputUser" placeholder="Seu Bairro">
+            </div>
+            <div class="inputBox">
+                <input type="text" name="cidade" id="cidade" placeholder="Sua Cidade">
+            </div>
+            <div class="inputBox">
+                <input type="text" name="estado" id="estado" class="inputUser" placeholder="Seu Estado">
+            </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
