@@ -1,46 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Busca Cep</title>
+<!doctype html>
+<html lang="en">
 
-    <link rel="stylesheet" href="./index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busca Cep</title>
+</head>
 
-    <script src="https://kit.fontawesome.com/dbb93704e0.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <form action="">
-    <div class="container">
-        <h1>Digite seu Cep📌</h1>
-        <div class="box">
-            <div class="inputBox" id="box">
-             <input type="text" onblur="pesquisacep(this.value)" name="cep" id="cep" placeholder="Digite seu CEP" maxlength="8" required>
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          <div class="search">
-        
-            <div class="inputBox">
-                <input type="text" name="rua" id="rua" class="inputUser" placeholder="Sua Rua">
-            </div>
-            <div class="inputBox">
-                <input type="text" name="bairro" id="bairro" class="inputUser" placeholder="Seu Bairro">
-            </div>
-            <div class="inputBox">
-                <input type="text" name="cidade" id="cidade" placeholder="Sua Cidade">
-            </div>
-            <div class="inputBox">
-                <input type="text" name="estado" id="estado" class="inputUser" placeholder="Seu Estado">
-            </div>
-        </div>
-      </form>
-    </div>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-
-<script src="./index.js"></script>
 </html>
